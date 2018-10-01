@@ -18,6 +18,7 @@ def get_max_profit(arr)
     #     i+=1 
     # end 
     # profits.max   This Works, now try to optimize it from O(n!)
+    
     # trying greedy 
     min_buy = arr[0] # 10
     sell_price = arr[1] # 7 
