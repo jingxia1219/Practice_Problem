@@ -27,6 +27,8 @@ def get_products_but_self(arr)
         result[i] = products_before_el[i] * products_after_el[i]
     end 
     result 
+
+    # Can we improve on space? 
 end 
 # time O(n), space O(3n) as we created 3 new variables, which improved on Time 
 get_products_but_self([1, 7, 3, 4]) 
