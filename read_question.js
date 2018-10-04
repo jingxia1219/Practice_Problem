@@ -5,6 +5,8 @@ const reader = readline.createInterface({
 });
 reader.question("What is your name?", function(answer) {
     console.log(`Hello ${answer}!`);
+    reader.close(); //adding this line will close the program after it runs through the code
+    //otherwise it will be waiting for your input even after the program reaches last line of code
 });
 console.log("Last program line");
 // the purpose of this exercise is to demonstrate 
