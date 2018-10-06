@@ -51,5 +51,11 @@ graph = Graph.new(vertices, edges)
 
 
 def topogoical_sort(graph)
-    graph.vertices
+    visited = Set.new 
+    result = []
+    graph.vertices.each do |v|
+
+    end 
 end 
+
+def bfs(v, )
