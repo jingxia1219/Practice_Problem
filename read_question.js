@@ -7,16 +7,18 @@ const reader = readline.createInterface({
 function askName() {
 reader.question("What is your name?", function(answer) {
     console.log(`Hello ${answer}!`);
-    reader.close(); //adding this line will close the program after it runs through the code
+    //reader.close(); //adding this line will close the program after it runs through the code
     //otherwise it will be waiting for your input even after the program reaches last line of code
+    console.log("Last program line"); // this will 
+    //be executed after hello'name' because within 
+    // the function itself, it's synchronous
 });
-console.log("Last program line");
 }
 
 // the purpose of this exercise is to demonstrate 
 // asynchronous, as Last program line will print before 
 // it logs hello ${answer} as it wont wait for the answer input
-
+// reader.open();
 function addTwoNumbers(callback) {
     reader.question("Enter #1: ", function(string1){
         reader.question("Enter #2: ", function(string2) {
