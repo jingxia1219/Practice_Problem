@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <ul id="cat">Cats
+        </ul>
+        <script>
+            window.setTimeout( ()=> {
+                const ul2 = document.getElementById("cat");
+                const li2 = document.createElement("li");
+                li2.textContent = "2This is injected by JavaScript";
+                ul2.appendChild(li2);
+            }, 1000);
+        </script>
+
+        <ul id="cats">
+        </ul>
+        
+        <script>
+            window.setTimeout(() => {
+                const ul = document.getElementById("cats");
+                const li = document.createElement("li");
+                li.textContent = "This is injected by JavaScript";
+                ul.appendChild(li);
+            }, 1000);
+        </script>
+    </body>
+</html>
